@@ -48,6 +48,6 @@ jobs:
       - name: Setup Flutter
         run: make setup
 
-      - name: Flutter Android Build
+      - name: Flutter iOS Build
         run: |
-          fvm flutter run
+          fvm flutter build ios --no-codesign
