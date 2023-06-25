@@ -34,9 +34,11 @@ jobs:
         with:
           ruby-version: .ruby-version
 
+      - name: testtest
+        run: cd ios
+
       - name: Install Bundled Gems
         run: |
-          cd ios
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
         
